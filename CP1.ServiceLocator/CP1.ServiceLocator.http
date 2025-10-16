@@ -1,0 +1,6 @@
+@CP1.ServiceLocator_HostAddress = http://localhost:5027
+
+GET {{CP1.ServiceLocator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

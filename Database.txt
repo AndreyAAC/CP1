@@ -1,0 +1,15 @@
+CREATE DATABASE CP1;
+GO
+USE CP1;
+GO
+ 
+ 
+CREATE TABLE dbo.Tasks (
+    TaskId       INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_Tasks PRIMARY KEY,
+    [Name]       NVARCHAR(100)     NOT NULL,
+    [Description] NVARCHAR(500)    NULL,
+    CreatedDate  DATETIME2(0)      NOT NULL CONSTRAINT DF_Tasks_CreatedDate DEFAULT (SYSUTCDATETIME()),
+    CreatedBy    NVARCHAR(100)     NULL,
+    [Status]     BIT               NOT NULL CONSTRAINT DF_Tasks_Status DEFAULT (0)
+);
+GO

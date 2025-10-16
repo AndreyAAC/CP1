@@ -1,0 +1,2 @@
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1.Api\CP1.ServiceLocator\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1.Api\CP1.ServiceLocator\obj\Debug\net8.0\staticwebassets.build.json
