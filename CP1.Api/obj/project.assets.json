@@ -1095,7 +1095,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "CP1.Data": "1.0.0"
+          "CP1.Data": "1.0.0",
+          "CP1.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/CP1.Core.dll": {}
@@ -1115,6 +1116,16 @@
         },
         "runtime": {
           "bin/placeholder/CP1.Data.dll": {}
+        }
+      },
+      "CP1.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/CP1.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CP1.Models.dll": {}
         }
       }
     }
@@ -3259,33 +3270,39 @@
       "type": "project",
       "path": "../CP1.Data/CP1.Data.csproj",
       "msbuildProject": "../CP1.Data/CP1.Data.csproj"
+    },
+    "CP1.Models/1.0.0": {
+      "type": "project",
+      "path": "../CP1.Models/CP1.Models.csproj",
+      "msbuildProject": "../CP1.Models/CP1.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "CP1.Core >= 1.0.0",
       "CP1.Data >= 1.0.0",
+      "CP1.Models >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\XPC\\.nuget\\packages\\": {},
+    "C:\\Users\\acaguilar\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1.Api\\CP1.Api\\CP1.Api.csproj",
+      "projectUniqueName": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Api\\CP1.Api.csproj",
       "projectName": "CP1.Api",
-      "projectPath": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1.Api\\CP1.Api\\CP1.Api.csproj",
-      "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1.Api\\CP1.Api\\obj\\",
+      "projectPath": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Api\\CP1.Api.csproj",
+      "packagesPath": "C:\\Users\\acaguilar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\acaguilar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3301,11 +3318,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1.Api\\CP1.Core\\CP1.Core.csproj": {
-              "projectPath": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1.Api\\CP1.Core\\CP1.Core.csproj"
+            "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Core\\CP1.Core.csproj": {
+              "projectPath": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Core\\CP1.Core.csproj"
             },
-            "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1.Api\\CP1.Data\\CP1.Data.csproj": {
-              "projectPath": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1.Api\\CP1.Data\\CP1.Data.csproj"
+            "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Data\\CP1.Data.csproj": {
+              "projectPath": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Data\\CP1.Data.csproj"
+            },
+            "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Models\\CP1.Models.csproj": {
+              "projectPath": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Models\\CP1.Models.csproj"
             }
           }
         }

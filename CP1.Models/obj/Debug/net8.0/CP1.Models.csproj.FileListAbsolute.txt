@@ -9,3 +9,15 @@ C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1.Api\CP1.Models\obj\D
 C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1.Api\CP1.Models\obj\Debug\net8.0\refint\CP1.Models.dll
 C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1.Api\CP1.Models\obj\Debug\net8.0\CP1.Models.pdb
 C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1.Api\CP1.Models\obj\Debug\net8.0\ref\CP1.Models.dll
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Models\bin\Debug\net8.0\CP1.Models.deps.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Models\bin\Debug\net8.0\CP1.Models.dll
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Models\bin\Debug\net8.0\CP1.Models.pdb
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Models\obj\Debug\net8.0\CP1.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Models\obj\Debug\net8.0\CP1.Models.AssemblyInfoInputs.cache
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Models\obj\Debug\net8.0\CP1.Models.AssemblyInfo.cs
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Models\obj\Debug\net8.0\CP1.Models.csproj.CoreCompileInputs.cache
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Models\obj\Debug\net8.0\CP1.Models.sourcelink.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Models\obj\Debug\net8.0\CP1.Models.dll
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Models\obj\Debug\net8.0\refint\CP1.Models.dll
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Models\obj\Debug\net8.0\CP1.Models.pdb
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Models\obj\Debug\net8.0\ref\CP1.Models.dll

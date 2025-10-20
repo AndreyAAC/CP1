@@ -10,6 +10,7 @@
         "dependencies": {
           "CP1.Core": "1.0.0",
           "CP1.Data": "1.0.0",
+          "CP1.Models": "1.0.0",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
@@ -665,7 +666,8 @@
       },
       "CP1.Core/1.0.0": {
         "dependencies": {
-          "CP1.Data": "1.0.0"
+          "CP1.Data": "1.0.0",
+          "CP1.Models": "1.0.0"
         },
         "runtime": {
           "CP1.Core.dll": {
@@ -680,6 +682,14 @@
         },
         "runtime": {
           "CP1.Data.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CP1.Models/1.0.0": {
+        "runtime": {
+          "CP1.Models.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1133,6 +1143,11 @@
       "sha512": ""
     },
     "CP1.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CP1.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

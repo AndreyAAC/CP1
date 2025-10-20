@@ -1,0 +1,27 @@
+﻿@model List<CP1.Models.DTOs.TaskDTO>
+@await Html.PartialAsync("~/Views/Shared/_Sidebar.cshtml")
+<div class="container py-3">
+    <h2 class="mb-3">Tareas</h2>
+    <div class="list-group">
+        @foreach (var t in Model)
+        {
+            <div class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <strong>@t.Name</strong>
+                    <span class="badge bg-@(t.Status ? "success" : "secondary")">
+                        @(t.Status ? "Completada" : "Pendiente")
+                    </span>
+                </div>
+                <div class="text-muted">@t.Description</div>
+                <div class="mt-2">
+                    <a class="btn btn-sm btn-outline-primary" href="@Url.Action("EditTask", "Home", new { id = t.TaskId })">
+                        <i class="bi bi-pencil-square me-1"></i> Editar
+                    </a>
+                    <a class="btn btn-sm btn-outline-danger" href="@Url.Action("DeleteTask", "Home", new { id = t.TaskId })">
+                        <i class="bi bi-trash3 me-1"></i> Eliminar
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</div>

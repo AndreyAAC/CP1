@@ -1,0 +1,29 @@
+﻿@model CP1.Models.DTOs.TaskDTO
+
+@await Html.PartialAsync("~/Views/Shared/_Sidebar.cshtml")
+
+<div class="container py-3">
+    <h2>Eliminar tarea</h2>
+
+    @if (Model is null)
+    {
+        <div class="alert alert-warning">No se encontró la tarea.</div>
+    }
+    else
+    {
+        <div class="alert alert-danger">
+            ¿Seguro que deseas eliminar <strong>@Model.Name</strong>?
+        </div>
+
+        <form asp-action="ConfirmDelete" asp-controller="Home" method="post">
+            <input type="hidden" name="id" value="@Model.TaskId" />
+            @Html.AntiForgeryToken()
+
+            <button type="submit" class="btn btn-danger">
+                <i class="bi bi-trash3 me-1"></i> Eliminar
+            </button>
+
+            <a class="btn btn-secondary" asp-action="Task" asp-controller="Home">Cancelar</a>
+        </form>
+    }
+</div>

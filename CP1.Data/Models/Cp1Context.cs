@@ -1,28 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace CP1.Data.Models;
 
 public partial class Cp1Context : DbContext
 {
-    public Cp1Context()
-    {
-    }
+    public Cp1Context(DbContextOptions<Cp1Context> options) : base(options) { }
 
-    public Cp1Context(DbContextOptions<Cp1Context> options)
-        : base(options)
-    {
-    }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=(LocalDb)\\MSSQLLocalDB;Database=CP1;Trusted_Connection=True;TrustServerCertificate=True;");
+    public DbSet<TaskItem> Tasks => Set<TaskItem>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        OnModelCreatingPartial(modelBuilder);
+        modelBuilder.Entity<TaskItem>(entity =>
+        {
+            entity.ToTable("Tasks");
+            entity.HasKey(x => x.TaskId);
+            entity.Property(x => x.Name).HasMaxLength(100).IsRequired();
+            entity.Property(x => x.Description).HasMaxLength(500);
+            entity.Property(x => x.CreatedDate).HasColumnType("datetime2(0)");
+        });
     }
-
-    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }

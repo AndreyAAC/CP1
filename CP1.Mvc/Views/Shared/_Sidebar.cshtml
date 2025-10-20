@@ -1,0 +1,213 @@
+﻿@using Microsoft.AspNetCore.Mvc.Rendering
+@inject Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper Html
+
+@functions {
+    string IsActive(string controller, string? action = null)
+    {
+        var currentController = (ViewContext.RouteData.Values["controller"]?.ToString() ?? "").ToLowerInvariant();
+        var currentAction = (ViewContext.RouteData.Values["action"]?.ToString() ?? "").ToLowerInvariant();
+
+        if (!string.IsNullOrEmpty(controller) && currentController != controller.ToLowerInvariant())
+            return "";
+
+        if (string.IsNullOrEmpty(action)) return "active";
+        return currentAction == action.ToLowerInvariant() ? "active" : "";
+    }
+}
+
+<style>
+    :root {
+        --cp1-sidebar-expanded: 260px;
+        --cp1-sidebar-collapsed: 64px;
+    }
+
+    .cp1-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: var(--cp1-sidebar-expanded);
+        background: #f8f9fa;
+        border-right: 1px solid #dee2e6;
+        padding: .75rem .75rem;
+        z-index: 1030;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    body.cp1-collapsed .cp1-sidebar {
+        width: var(--cp1-sidebar-collapsed);
+    }
+
+
+    body {
+        padding-left: var(--cp1-sidebar-expanded);
+    }
+
+        body.cp1-collapsed {
+            padding-left: var(--cp1-sidebar-collapsed);
+        }
+
+    .cp1-brand {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: inherit;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    body.cp1-collapsed .cp1-brand-text {
+        display: none;
+    }
+
+    .cp1-toggle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: .5rem;
+    }
+
+    body.cp1-collapsed .cp1-toggle .cp1-toggle-text {
+        display: none;
+    }
+
+    .cp1-menu {
+        margin-top: .5rem;
+    }
+
+    .cp1-section-title {
+        font-size: .75rem;
+        text-transform: uppercase;
+        color: #6c757d;
+        margin: .5rem .25rem;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    body.cp1-collapsed .cp1-section-title {
+        display: none;
+    }
+
+    .cp1-nav .nav-link {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+        .cp1-nav .nav-link .cp1-text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    body.cp1-collapsed .cp1-nav .nav-link .cp1-text {
+        display: none;
+    }
+
+    .cp1-nav .nav-link.active {
+        font-weight: 600;
+        background-color: #e9ecef;
+    }
+
+    .cp1-footer {
+        margin-top: auto;
+        border-top: 1px solid #dee2e6;
+        padding-top: .5rem;
+        font-size: .8rem;
+        color: #6c757d;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    body.cp1-collapsed .cp1-footer {
+        display: none;
+    }
+</style>
+
+<div class="cp1-sidebar">
+    <a class="cp1-brand" asp-controller="Home" asp-action="Index" title="Inicio">
+        <i class="bi bi-kanban"></i>
+        <span class="cp1-brand-text">Caso Practico #1</span>
+    </a>
+
+    <div class="mt-2">
+        <button type="button" class="btn btn-outline-secondary cp1-toggle" id="cp1ToggleBtn">
+            <span class="cp1-toggle-text">Ocultar menú</span>
+            <i class="bi bi-chevron-left" id="cp1ToggleIcon"></i>
+        </button>
+    </div>
+
+    <div class="cp1-menu">
+        <div class="cp1-section-title">Gestión</div>
+        <ul class="nav nav-pills flex-column cp1-nav">
+            <li class="nav-item">
+                <a class="nav-link @IsActive("Home", "Task")" asp-controller="Home" asp-action="Task" title="Listado de Tareas">
+                    <i class="bi bi-card-checklist"></i>
+                    <span class="cp1-text">Tareas</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link @IsActive("Home", "CreateTask")" asp-controller="Home" asp-action="CreateTask" title="Crear Tarea">
+                    <i class="bi bi-plus-circle"></i>
+                    <span class="cp1-text">Crear Task</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link @(IsActive("Home", "EditTask") + " " + IsActive("Home", "DeleteTask"))" asp-controller="Home" asp-action="Task" title="Editar una tarea existente">
+                    <i class="bi bi-pencil-square"></i>
+                    <span class="cp1-text">Actualizar Task</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link @(IsActive("Home", "DeleteTask"))" asp-controller="Home" asp-action="Task" title="Eliminar una tarea existente">
+                    <i class="bi bi-trash3"></i>
+                    <span class="cp1-text">Eliminar Task</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="cp1-footer">
+        © @DateTime.Now.Year — CP1
+    </div>
+</div>
+
+<script>
+    (function () {
+        const KEY = "cp1SidebarCollapsed";
+        const body = document.body;
+        const btn  = document.getElementById("cp1ToggleBtn");
+        const icon = document.getElementById("cp1ToggleIcon");
+        const text = document.getElementById("cp1ToggleText");
+
+        function updateButtonState(isCollapsed) {
+            if (icon) {
+                icon.classList.toggle("bi-chevron-left", !isCollapsed);
+                icon.classList.toggle("bi-chevron-right", isCollapsed);
+            }
+            if (text) {
+                text.textContent = isCollapsed ? "Ver menú" : "Ocultar menú";
+            }
+        }
+
+        const saved = localStorage.getItem(KEY);
+        const isCollapsed = saved === "true";
+        if (isCollapsed) {
+            body.classList.add("cp1-collapsed");
+        }
+        updateButtonState(isCollapsed);
+        btn?.addEventListener("click", function () {
+            const collapsed = body.classList.toggle("cp1-collapsed");
+            localStorage.setItem(KEY, collapsed ? "true" : "false");
+            updateButtonState(collapsed);
+        }, false);
+    })();
+</script>

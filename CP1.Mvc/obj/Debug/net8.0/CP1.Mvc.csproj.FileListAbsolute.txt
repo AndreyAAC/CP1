@@ -48,3 +48,43 @@ C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1.Api\CP1.Mvc\obj\Debu
 C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1.Api\CP1.Mvc\obj\Debug\net8.0\CP1.Mvc.pdb
 C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1.Api\CP1.Mvc\obj\Debug\net8.0\CP1.Mvc.genruntimeconfig.cache
 C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1.Api\CP1.Mvc\obj\Debug\net8.0\ref\CP1.Mvc.dll
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\bin\Debug\net8.0\appsettings.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\bin\Debug\net8.0\CP1.Mvc.staticwebassets.runtime.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\bin\Debug\net8.0\CP1.Mvc.staticwebassets.endpoints.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\bin\Debug\net8.0\CP1.Mvc.exe
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\bin\Debug\net8.0\CP1.Mvc.deps.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\bin\Debug\net8.0\CP1.Mvc.runtimeconfig.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\bin\Debug\net8.0\CP1.Mvc.dll
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\bin\Debug\net8.0\CP1.Mvc.pdb
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\bin\Debug\net8.0\CP1.Architecture.dll
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\bin\Debug\net8.0\CP1.Models.dll
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\bin\Debug\net8.0\CP1.Architecture.pdb
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\bin\Debug\net8.0\CP1.Models.pdb
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\CP1.Mvc.csproj.AssemblyReference.cache
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\CP1.Mvc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\CP1.Mvc.AssemblyInfoInputs.cache
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\CP1.Mvc.AssemblyInfo.cs
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\CP1.Mvc.csproj.CoreCompileInputs.cache
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\CP1.Mvc.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\CP1.Mvc.RazorAssemblyInfo.cache
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\CP1.Mvc.RazorAssemblyInfo.cs
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\CP1.Mvc.sourcelink.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\scopedcss\bundle\CP1.Mvc.styles.css
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\scopedcss\projectbundle\CP1.Mvc.bundle.scp.css
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\CP1.Mvc.csproj.Up2Date
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\CP1.Mvc.dll
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\refint\CP1.Mvc.dll
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\CP1.Mvc.pdb
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\CP1.Mvc.genruntimeconfig.cache
+C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Mvc\obj\Debug\net8.0\ref\CP1.Mvc.dll
