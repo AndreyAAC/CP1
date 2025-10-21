@@ -70,8 +70,7 @@
               "RelativeToolTip": "CP1.Mvc\\Views\\Home\\CreateTask.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-20T18:47:40.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T18:47:40.546Z"
             },
             {
               "$type": "Document",
@@ -81,7 +80,7 @@
               "RelativeDocumentMoniker": "CP1.Mvc\\Views\\Home\\EditTask.cshtml",
               "ToolTip": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Mvc\\Views\\Home\\EditTask.cshtml",
               "RelativeToolTip": "CP1.Mvc\\Views\\Home\\EditTask.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-20T18:47:13.99Z",
               "EditorCaption": ""
@@ -96,8 +95,7 @@
               "RelativeToolTip": "CP1.Mvc\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAA0AAAAAAAAAAAAAABsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-20T18:44:49.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T18:44:49.365Z"
             },
             {
               "$type": "Document",
@@ -109,8 +107,7 @@
               "RelativeToolTip": "CP1.Api\\Controllers\\TaskController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwCEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T18:32:59.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T18:32:59.96Z"
             },
             {
               "$type": "Document",
@@ -122,8 +119,7 @@
               "RelativeToolTip": "CP1.Mvc\\Controllers\\HomeController.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAzwD0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T18:19:26.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T18:19:26.928Z"
             },
             {
               "$type": "Document",
@@ -135,8 +131,7 @@
               "RelativeToolTip": "CP1.Architecture\\Providers\\RestProvider.cs",
               "ViewState": "AgIAAFcAAAAAAAAAAAAYwHAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T18:19:26.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T18:19:26.932Z"
             },
             {
               "$type": "Document",
@@ -148,8 +143,7 @@
               "RelativeToolTip": "CP1.MinimalApi\\Program.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAC4AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T17:55:20.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T17:55:20.128Z"
             }
           ]
         }
