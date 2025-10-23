@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-5" style="max-width: 560px;">
+    <div class="card shadow-sm">
+        <div class="card-body p-4">
+            <h2 class="mb-3">¡Bienvenido!</h2>
+            <p class="text-muted">Por favor ingresa tu correo y contraseña para acceder.</p>
+
+            @if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger">@ViewBag.Error</div>
+            }
+
+            <form method="post" asp-action="Login" asp-controller="Auth">
+                <div class="mb-3">
+                    <label class="form-label">Correo</label>
+                    <input class="form-control" type="email" name="Email" required />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Contraseña</label>
+                    <input class="form-control" type="password" name="Password" required />
+                </div>
+
+                <button class="btn btn-primary w-100">Acceder</button>
+            </form>
+
+            <div class="mt-3 text-center">
+                <small class="text-muted">Serás redirigido al inicio al iniciar sesión.</small>
+            </div>
+        </div>
+    </div>
+</div>

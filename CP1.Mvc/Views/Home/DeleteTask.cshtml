@@ -1,5 +1,4 @@
 ﻿@model CP1.Models.DTOs.TaskDTO
-
 @await Html.PartialAsync("~/Views/Shared/_Sidebar.cshtml")
 
 <div class="container py-3">
@@ -16,8 +15,7 @@
         </div>
 
         <form asp-action="ConfirmDelete" asp-controller="Home" method="post">
-            <input type="hidden" name="id" value="@Model.TaskId" />
-            @Html.AntiForgeryToken()
+            <input type="hidden" name="id" value="@Model.Id" />
 
             <button type="submit" class="btn btn-danger">
                 <i class="bi bi-trash3 me-1"></i> Eliminar

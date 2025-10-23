@@ -1,0 +1,88 @@
+﻿@model List<CP1.Models.DTOs.TaskDTO>
+@{
+    ViewData["Title"] = "Aprobación de Tareas";
+}
+@await Html.PartialAsync("~/Views/Shared/_Sidebar.cshtml")
+
+<div class="container py-3">
+    <h2 class="mb-3">Aprobación de Tareas</h2>
+
+    @if (TempData["AlertSuccess"] != null)
+    {
+        <div class="alert alert-success">@TempData["AlertSuccess"]</div>
+    }
+    @if (TempData["AlertWarning"] != null)
+    {
+        <div class="alert alert-warning">@TempData["AlertWarning"]</div>
+    }
+
+    <div class="table-responsive">
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th style="width: 32px;">#</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Estado</th>
+                    <th>Due Date</th>
+                    <th>Creada</th>
+                    <th style="width: 240px;">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int i = 1;
+                    var nowUtc = DateTime.UtcNow;
+                }
+                @foreach (var t in Model)
+                {
+                    string badgeClass = t.Approved == true ? "bg-success"
+                    : t.Approved == false ? "bg-danger" : "bg-secondary";
+                    string badgeText = t.Approved == true ? "Aprobada"
+                    : t.Approved == false ? "Denegada" : "Pendiente";
+
+                    bool denyDisabled = t.CreatedAt.HasValue && (nowUtc - t.CreatedAt.Value).TotalHours > 24;
+
+                    <tr>
+                        <td>@i</td>
+                        <td class="fw-semibold">@t.Name</td>
+                        <td class="text-muted">@t.Description</td>
+                        <td>
+                            <span class="badge @badgeClass">@badgeText</span>
+                        </td>
+                        <td>@t.DueDate.ToString("yyyy-MM-dd HH:mm")</td>
+                        <td>@(t.CreatedAt?.ToString("yyyy-MM-dd HH:mm") ?? "-")</td>
+                        <td>
+                            <div class="d-flex gap-2">
+                                <form asp-action="ChangeTaskStatus" asp-controller="Home" method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@t.Id" />
+                                    <input type="hidden" name="state" value="approve" />
+                                    <button type="submit" class="btn btn-sm btn-success"
+                                            @(t.Approved == true ? "disabled" : null)>
+                                        <i class="bi bi-check2-circle me-1"></i> Aprobar
+                                    </button>
+                                </form>
+
+                                <form asp-action="ChangeTaskStatus" asp-controller="Home" method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@t.Id" />
+                                    <input type="hidden" name="state" value="deny" />
+                                    <button type="submit" class="btn btn-sm btn-outline-danger"
+                                            @((t.Approved == false || denyDisabled) ? "disabled" : null)
+                                            title="@(denyDisabled ? "No permitido: creada hace más de 24 horas" : "")">
+                                        <i class="bi bi-x-circle me-1"></i> Denegar
+                                    </button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                    i++;
+                }
+            </tbody>
+        </table>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">No hay tareas registradas.</div>
+    }
+</div>

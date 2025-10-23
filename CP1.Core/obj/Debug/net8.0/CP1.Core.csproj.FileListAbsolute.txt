@@ -31,3 +31,21 @@ C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Core\obj\Debug\net8.0\CP1.Core.
 C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Core\obj\Debug\net8.0\refint\CP1.Core.dll
 C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Core\obj\Debug\net8.0\CP1.Core.pdb
 C:\Users\acaguilar\Desktop\Proyectos\CP1\CP1\CP1.Core\obj\Debug\net8.0\ref\CP1.Core.dll
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\bin\Debug\net8.0\CP1.Core.deps.json
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\bin\Debug\net8.0\CP1.Core.dll
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\bin\Debug\net8.0\CP1.Core.pdb
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\bin\Debug\net8.0\CP1.Data.dll
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\bin\Debug\net8.0\CP1.Models.dll
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\bin\Debug\net8.0\CP1.Data.pdb
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\bin\Debug\net8.0\CP1.Models.pdb
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\obj\Debug\net8.0\CP1.Core.csproj.AssemblyReference.cache
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\obj\Debug\net8.0\CP1.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\obj\Debug\net8.0\CP1.Core.AssemblyInfoInputs.cache
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\obj\Debug\net8.0\CP1.Core.AssemblyInfo.cs
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\obj\Debug\net8.0\CP1.Core.csproj.CoreCompileInputs.cache
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\obj\Debug\net8.0\CP1.Core.sourcelink.json
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\obj\Debug\net8.0\CP1.Core.csproj.Up2Date
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\obj\Debug\net8.0\CP1.Core.dll
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\obj\Debug\net8.0\refint\CP1.Core.dll
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\obj\Debug\net8.0\CP1.Core.pdb
+C:\Users\XPC\Desktop\Fidelitas\Progra V\Caso Practico 1\CP1\CP1.Core\obj\Debug\net8.0\ref\CP1.Core.dll

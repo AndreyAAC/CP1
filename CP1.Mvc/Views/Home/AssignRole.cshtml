@@ -1,0 +1,141 @@
+﻿@model List<CP1.Models.DTOs.UserRoleDTO>
+@{
+    ViewData["Title"] = "Asignar Roles";
+    var roles = ViewBag.Roles as List<CP1.Models.DTOs.RoleDTO> ?? new List<CP1.Models.DTOs.RoleDTO>();
+}
+@await Html.PartialAsync("~/Views/Shared/_Sidebar.cshtml")
+
+<div class="container py-3">
+    <h2 class="mb-3">Asignación de Roles (Admin)</h2>
+
+    @if (TempData["AlertSuccess"] != null)
+    {
+        <div class="alert alert-success">@TempData["AlertSuccess"]</div>
+    }
+    @if (TempData["AlertWarning"] != null)
+    {
+        <div class="alert alert-warning">@TempData["AlertWarning"]</div>
+    }
+
+    <div class="row g-4">
+        <div class="col-lg-7">
+            <div class="card shadow-sm">
+                <div class="card-header bg-body-tertiary">
+                    <strong>Usuarios y rol asignado</strong>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Usuario</th>
+                                    <th>Correo</th>
+                                    <th>Rol actual</th>
+                                    <th style="width: 260px;">Cambiar rol</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    int i = 1;
+                                }
+                                @foreach (var u in Model)
+                                {
+                                    <tr>
+                                        <td>@i</td>
+                                        <td class="fw-semibold">@u.Username</td>
+                                        <td>@u.Email</td>
+                                        <td>
+                                            <span class="badge bg-primary">@u.RoleName</span>
+                                        </td>
+                                        <td>
+                                            <form asp-action="AssignUserRole" asp-controller="Home" method="post" class="d-flex gap-2">
+                                                <input type="hidden" name="userId" value="@u.UserId" />
+                                                <select name="roleId" class="form-select" required>
+                                                    @foreach (var r in roles)
+                                                    {
+                                                        <option value="@r.RoleId" selected="@(r.RoleId == u.RoleId ? "selected" : null)">
+                                                            @r.RoleName
+                                                        </option>
+                                                    }
+                                                </select>
+                                                <button type="submit" class="btn btn-outline-primary">
+                                                    <i class="bi bi-arrow-repeat me-1"></i> Actualizar
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    i++;
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                    @if (!Model.Any())
+                    {
+                        <div class="alert alert-info m-0">No hay usuarios registrados.</div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-body-tertiary">
+                    <strong>Crear rol</strong>
+                </div>
+                <div class="card-body">
+                    <form asp-action="CreateRole" asp-controller="Home" method="post" class="row g-3">
+                        <div class="col-12">
+                            <label class="form-label">Nombre del rol</label>
+                            <input name="RoleName" class="form-control" maxlength="50" required />
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Descripción</label>
+                            <input name="Description" class="form-control" maxlength="255" />
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-success">
+                                <i class="bi bi-plus-circle me-1"></i> Crear
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card shadow-sm">
+                <div class="card-header bg-body-tertiary">
+                    <strong>Editar roles existentes</strong>
+                </div>
+                <div class="card-body">
+                    @if (roles.Any())
+                    {
+                        @foreach (var r in roles)
+                        {
+                            <form asp-action="UpdateRole" asp-controller="Home" method="post" class="row g-2 align-items-end mb-3">
+                                <input type="hidden" name="RoleId" value="@r.RoleId" />
+                                <div class="col-md-5">
+                                    <label class="form-label">Nombre</label>
+                                    <input name="RoleName" class="form-control" value="@r.RoleName" maxlength="50" required />
+                                </div>
+                                <div class="col-md-5">
+                                    <label class="form-label">Descripción</label>
+                                    <input name="Description" class="form-control" value="@r.Description" maxlength="255" />
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn btn-outline-primary">
+                                        <i class="bi bi-save"></i> Guardar
+                                    </button>
+                                </div>
+                            </form>
+                        }
+                    }
+                    else
+                    {
+                        <div class="alert alert-info m-0">No hay roles registrados.</div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

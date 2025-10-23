@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Core\\CP1.Core.csproj": {}
+    "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Core\\CP1.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Core\\CP1.Core.csproj": {
+    "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Core\\CP1.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Core\\CP1.Core.csproj",
+        "projectUniqueName": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Core\\CP1.Core.csproj",
         "projectName": "CP1.Core",
-        "projectPath": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Core\\CP1.Core.csproj",
-        "packagesPath": "C:\\Users\\acaguilar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Core\\obj\\",
+        "projectPath": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Core\\CP1.Core.csproj",
+        "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\acaguilar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,11 +33,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Data\\CP1.Data.csproj": {
-                "projectPath": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Data\\CP1.Data.csproj"
+              "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Data\\CP1.Data.csproj": {
+                "projectPath": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Data\\CP1.Data.csproj"
               },
-              "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Models\\CP1.Models.csproj": {
-                "projectPath": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Models\\CP1.Models.csproj"
+              "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Models\\CP1.Models.csproj": {
+                "projectPath": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Models\\CP1.Models.csproj"
               }
             }
           }
@@ -77,20 +77,20 @@
         }
       }
     },
-    "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Data\\CP1.Data.csproj": {
+    "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Data\\CP1.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Data\\CP1.Data.csproj",
+        "projectUniqueName": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Data\\CP1.Data.csproj",
         "projectName": "CP1.Data",
-        "projectPath": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Data\\CP1.Data.csproj",
-        "packagesPath": "C:\\Users\\acaguilar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Data\\obj\\",
+        "projectPath": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Data\\CP1.Data.csproj",
+        "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\acaguilar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -161,20 +161,20 @@
         }
       }
     },
-    "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Models\\CP1.Models.csproj": {
+    "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Models\\CP1.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Models\\CP1.Models.csproj",
+        "projectUniqueName": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Models\\CP1.Models.csproj",
         "projectName": "CP1.Models",
-        "projectPath": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Models\\CP1.Models.csproj",
-        "packagesPath": "C:\\Users\\acaguilar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Models\\obj\\",
+        "projectPath": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Models\\CP1.Models.csproj",
+        "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\acaguilar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

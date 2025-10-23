@@ -15,6 +15,11 @@
     }
 }
 
+@{
+    var roleId = Context.Session.GetInt32("RoleId");
+    bool isAdmin = roleId == 1;
+}
+
 <style>
     :root {
         --cp1-sidebar-expanded: 260px;
@@ -36,11 +41,9 @@
         flex-direction: column;
     }
 
-
     body.cp1-collapsed .cp1-sidebar {
         width: var(--cp1-sidebar-collapsed);
     }
-
 
     body {
         padding-left: var(--cp1-sidebar-expanded);
@@ -120,8 +123,8 @@
     .cp1-footer {
         margin-top: auto;
         border-top: 1px solid #dee2e6;
-        padding-top: .5rem;
-        font-size: .8rem;
+        padding-top: .75rem;
+        font-size: .85rem;
         color: #6c757d;
         white-space: nowrap;
         overflow: hidden;
@@ -154,29 +157,58 @@
                     <span class="cp1-text">Tareas</span>
                 </a>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link @IsActive("Home", "CreateTask")" asp-controller="Home" asp-action="CreateTask" title="Crear Tarea">
                     <i class="bi bi-plus-circle"></i>
                     <span class="cp1-text">Crear Task</span>
                 </a>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link @(IsActive("Home", "EditTask") + " " + IsActive("Home", "DeleteTask"))" asp-controller="Home" asp-action="Task" title="Editar una tarea existente">
                     <i class="bi bi-pencil-square"></i>
                     <span class="cp1-text">Actualizar Task</span>
                 </a>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link @(IsActive("Home", "DeleteTask"))" asp-controller="Home" asp-action="Task" title="Eliminar una tarea existente">
                     <i class="bi bi-trash3"></i>
                     <span class="cp1-text">Eliminar Task</span>
                 </a>
             </li>
+
+            @if (isAdmin)
+            {
+                <li class="nav-item">
+                    <a class="nav-link @IsActive("Home", "ApprovedTask")" asp-controller="Home" asp-action="ApprovedTask" title="Aprobar o Denegar Tareas">
+                        <i class="bi bi-shield-check"></i>
+                        <span class="cp1-text">Aprobar Tareas</span>
+                    </a>
+                </li>
+            }
+            @if (isAdmin)
+            {
+                <li class="nav-item">
+                    <a class="nav-link @IsActive("Home", "AssignRole")" asp-controller="Home" asp-action="AssignRole" title="Asignar Roles">
+                        <i class="bi bi-people"></i>
+                        <span class="cp1-text">Asignar Roles</span>
+                    </a>
+                </li>
+            }
         </ul>
+        
     </div>
 
     <div class="cp1-footer">
-        © @DateTime.Now.Year — CP1
+        <div class="d-flex flex-column gap-2">
+            <form asp-controller="Auth" asp-action="Logout" method="post" class="m-0">
+                <button type="submit" class="btn btn-outline-danger w-100">
+                    <i class="bi bi-box-arrow-right me-1"></i> Cerrar sesión
+                </button>
+            </form>
+        </div>
     </div>
 </div>
 
@@ -184,7 +216,7 @@
     (function () {
         const KEY = "cp1SidebarCollapsed";
         const body = document.body;
-        const btn  = document.getElementById("cp1ToggleBtn");
+        const btn = document.getElementById("cp1ToggleBtn");
         const icon = document.getElementById("cp1ToggleIcon");
         const text = document.getElementById("cp1ToggleText");
 

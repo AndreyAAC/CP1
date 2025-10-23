@@ -1,4 +1,7 @@
 ﻿@model CP1.Models.DTOs.TaskDTO
+@{
+    var isSpecialist = (bool)(ViewBag.IsSpecialist ?? false);
+}
 @await Html.PartialAsync("~/Views/Shared/_Sidebar.cshtml")
 <div class="container py-3">
     <h2>Agregar tarea</h2>
@@ -7,20 +10,41 @@
             <label class="form-label">Nombre</label>
             <input class="form-control" name="Name" required />
         </div>
+
         <div class="mb-3">
             <label class="form-label">Descripción</label>
             <textarea class="form-control" name="Description"></textarea>
         </div>
+
         <div class="mb-3">
-            <label class="form-label">Creado por</label>
-            <input class="form-control" name="CreatedBy" />
+            <label class="form-label">Estado</label>
+            <select class="form-select" name="Status" required>
+                <option value="Pending">Pending</option>
+                <option value="InProgress">InProgress</option>
+                <option value="Completed">Completed</option>
+            </select>
         </div>
 
-        <div class="form-check mb-3">
-            @Html.CheckBoxFor(t => t.Status, new { @class = "form-check-input", id = "statusCheck" })
-            <label class="form-check-label" for="statusCheck">¿Completada?</label>
+        <div class="mb-3">
+            <label class="form-label">Fecha límite</label>
+            <input class="form-control" name="DueDate" type="datetime-local" required />
         </div>
-        <button class="btn btn-primary"><i class="bi bi-save me-1"></i> Guardar</button>
+
+        @if (!isSpecialist)
+        {
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="approvedCheck" name="Approved" value="true" />
+                <label class="form-check-label" for="approvedCheck">Aprobada</label>
+            </div>
+        }
+        else
+        {
+            <!-- Specialist: Approved forzosamente null (no se muestra checkbox) -->
+        }
+
+        <button class="btn btn-primary">
+            <i class="bi bi-save me-1"></i> Guardar
+        </button>
         <a class="btn btn-secondary" href="@Url.Action("Task", "Home")">Cancelar</a>
     </form>
 </div>

@@ -1,26 +1,59 @@
 ﻿@model CP1.Models.DTOs.TaskDTO
+@{
+    var isSpecialist = (bool)(ViewBag.IsSpecialist ?? false);
+}
 @await Html.PartialAsync("~/Views/Shared/_Sidebar.cshtml")
-<div class="container" style="container py-3">
+<div class="container py-3">
     <h2>Editar tarea</h2>
     <form method="post">
-        <input type="hidden" name="TaskId" value="@Model.TaskId" />
+        <input type="hidden" name="Id" value="@Model.Id" />
+
         <div class="mb-3">
             <label class="form-label">Nombre</label>
             <input class="form-control" name="Name" value="@Model.Name" required />
         </div>
+
         <div class="mb-3">
             <label class="form-label">Descripción</label>
             <textarea class="form-control" name="Description">@Model.Description</textarea>
         </div>
+
         <div class="mb-3">
-            <label class="form-label">Creado por</label>
-            <input class="form-control" name="CreatedBy" value="@Model.CreatedBy" />
+            <label class="form-label">Estado</label>
+            <select class="form-select" name="Status" required>
+                @{
+                    string[] statuses = new[] { "Pending", "InProgress", "Completed" };
+                    foreach (var s in statuses)
+                    {
+                        <option value="@s" selected="@(string.Equals(Model.Status, s, StringComparison.OrdinalIgnoreCase) ? "selected" : null)">@s</option>
+                    }
+                }
+            </select>
         </div>
-        <div class="form-check mb-3">
-            @Html.CheckBoxFor(t => t.Status, new { @class = "form-check-input", id = "statusCheck" })
-            <label class="form-check-label" for="statusCheck">¿Completada?</label>
+
+        <div class="mb-3">
+            <label class="form-label">Fecha límite</label>
+            <input class="form-control" name="DueDate" type="datetime-local"
+                   value="@(Model.DueDate.ToString("yyyy-MM-ddTHH:mm"))" required />
         </div>
-        <button class="btn btn-primary"><i class="bi bi-save me-1"></i> Guardar</button>
+
+        <div class="mb-3">
+            <label class="form-label">Creada</label>
+            <input class="form-control" value="@(Model.CreatedAt?.ToString("yyyy-MM-dd HH:mm") ?? "-")" disabled />
+        </div>
+
+        @if (!isSpecialist)
+        {
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="approvedCheck" name="Approved" value="true"
+                       @(Model.Approved == true ? "checked" : null) />
+                <label class="form-check-label" for="approvedCheck">Aprobada</label>
+            </div>
+        }
+
+        <button class="btn btn-primary">
+            <i class="bi bi-save me-1"></i> Guardar
+        </button>
         <a class="btn btn-secondary" href="@Url.Action("Task", "Home")">Cancelar</a>
     </form>
 </div>

@@ -4,21 +4,24 @@ namespace CP1.Models.DTOs;
 
 public class TaskDTO
 {
-    [JsonPropertyName("taskId")] 
-    public int TaskId { get; set; }
+    [JsonPropertyName("id")]
+    public int Id { get; set; }
 
-    [JsonPropertyName("name")] 
+    [JsonPropertyName("name")]
     public string Name { get; set; } = null!;
 
-    [JsonPropertyName("description")] 
+    [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    [JsonPropertyName("createdDate")] 
-    public DateTime CreatedDate { get; set; }
+    [JsonPropertyName("status")]
+    public string Status { get; set; } = "Pending";
 
-    [JsonPropertyName("createdBy")] 
-    public string? CreatedBy { get; set; }
+    [JsonPropertyName("dueDate")]
+    public DateTime DueDate { get; set; }
 
-    [JsonPropertyName("status")] 
-    public bool Status { get; set; }
+    [JsonPropertyName("createdAt")]
+    public DateTime? CreatedAt { get; set; }
+
+    [JsonPropertyName("approved")]
+    public bool? Approved { get; set; }
 }

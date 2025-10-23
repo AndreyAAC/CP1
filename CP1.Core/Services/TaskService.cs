@@ -6,68 +6,71 @@ namespace CP1.Core.Services;
 
 public class TaskService : ITaskService
 {
-    private readonly ITaskRepository _tastRepository;
+    private readonly ITaskRepository _taskRepository;
     private readonly IUnitOfWork _unitOfWork;
 
     public TaskService(ITaskRepository taskRepository, IUnitOfWork unitOfWork)
-    { _tastRepository = taskRepository; _unitOfWork = unitOfWork; }
+    { _taskRepository = taskRepository; _unitOfWork = unitOfWork; }
 
-    private static TaskDTO ToDto(TaskItem task) => new()
+    private static TaskDTO CrearDTO(TaskItem task) => new()
     {
-        TaskId = task.TaskId,
+        Id = task.Id,
         Name = task.Name,
         Description = task.Description,
-        CreatedDate = task.CreatedDate,
-        CreatedBy = task.CreatedBy,
-        Status = task.Status
+        Status = task.Status,
+        DueDate = task.DueDate,
+        CreatedAt = task.CreatedAt,
+        Approved = task.Approved
     };
 
     private static void ApplyDto(TaskItem target, TaskDTO source, bool isUpdate)
     {
         target.Name = source.Name;
         target.Description = source.Description;
-        target.CreatedBy = source.CreatedBy;
         target.Status = source.Status;
-        if (!isUpdate) target.CreatedDate = DateTime.UtcNow;
+        target.DueDate = source.DueDate;
+        target.Approved = source.Approved;
+        if (!isUpdate && source.CreatedAt.HasValue)
+            target.CreatedAt = source.CreatedAt;
     }
 
     public async Task<List<TaskDTO>> ListAsync(string? query = null, CancellationToken cancellationToken = default)
     {
-        var list = await _tastRepository.ReadAsync(
-            string.IsNullOrWhiteSpace(query) ? null : t => t.Name.Contains(query!), cancellationToken);
-        return list.Select(ToDto).ToList();
+        var list = await _taskRepository.ReadAsync(
+            string.IsNullOrWhiteSpace(query) ? null : task => task.Name.Contains(query!), cancellationToken);
+        return list.Select(CrearDTO).ToList();
     }
 
     public async Task<TaskDTO?> GetAsync(int id, CancellationToken cancellationToken = default)
     {
-        var entity = await _tastRepository.FindAsync(id, cancellationToken);
-        return entity is null ? null : ToDto(entity);
+        var entity = await _taskRepository.FindAsync(id, cancellationToken);
+        return entity is null ? null : CrearDTO(entity);
     }
 
     public async Task<TaskDTO> CreateAsync(TaskDTO dto, CancellationToken cancellationToken = default)
     {
         var entity = new TaskItem();
         ApplyDto(entity, dto, isUpdate: false);
-        await _tastRepository.AddAsync(entity, cancellationToken);
+        await _taskRepository.AddAsync(entity, cancellationToken);
         await _unitOfWork.SaveChangesAsync(cancellationToken);
-        return ToDto(entity);
+        return CrearDTO(entity);
     }
 
     public async Task<bool> UpdateAsync(int id, TaskDTO dto, CancellationToken cancellationToken = default)
     {
-        var entity = await _tastRepository.FindAsync(id, cancellationToken);
+        var entity = await _taskRepository.FindAsync(id, cancellationToken);
         if (entity is null) return false;
         ApplyDto(entity, dto, isUpdate: true);
-        _tastRepository.Update(entity);
+        _taskRepository.Update(entity);
         await _unitOfWork.SaveChangesAsync(cancellationToken);
         return true;
     }
 
     public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken = default)
     {
-        var entity = await _tastRepository.FindAsync(id, cancellationToken);
+        var entity = await _taskRepository.FindAsync(id, cancellationToken);
         if (entity is null) return false;
-        _tastRepository.Remove(entity);
+        _taskRepository.Remove(entity);
         await _unitOfWork.SaveChangesAsync(cancellationToken);
         return true;
     }

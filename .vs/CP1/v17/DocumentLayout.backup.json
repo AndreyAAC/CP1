@@ -1,34 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\",
+  "WorkspaceRootPath": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|c:\\users\\acaguilar\\desktop\\proyectos\\cp1\\cp1\\cp1.mvc\\views\\home\\edittask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|solutionrelative:cp1.mvc\\views\\home\\edittask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|c:\\users\\xpc\\desktop\\fidelitas\\progra v\\caso practico 1\\cp1\\cp1.mvc\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|solutionrelative:cp1.mvc\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|c:\\users\\acaguilar\\desktop\\proyectos\\cp1\\cp1\\cp1.mvc\\views\\home\\createtask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|solutionrelative:cp1.mvc\\views\\home\\createtask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|c:\\users\\xpc\\desktop\\fidelitas\\progra v\\caso practico 1\\cp1\\cp1.mvc\\views\\home\\deletetask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|solutionrelative:cp1.mvc\\views\\home\\deletetask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|c:\\users\\acaguilar\\desktop\\proyectos\\cp1\\cp1\\cp1.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|solutionrelative:cp1.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|c:\\users\\xpc\\desktop\\fidelitas\\progra v\\caso practico 1\\cp1\\cp1.mvc\\views\\home\\assignrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|solutionrelative:cp1.mvc\\views\\home\\assignrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{489AB659-8F1B-4149-BDB5-C04A356DC369}|CP1.Architecture\\CP1.Architecture.csproj|c:\\users\\acaguilar\\desktop\\proyectos\\cp1\\cp1\\cp1.architecture\\providers\\restprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{489AB659-8F1B-4149-BDB5-C04A356DC369}|CP1.Architecture\\CP1.Architecture.csproj|solutionrelative:cp1.architecture\\providers\\restprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|c:\\users\\xpc\\desktop\\fidelitas\\progra v\\caso practico 1\\cp1\\cp1.mvc\\views\\home\\approvedtask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|solutionrelative:cp1.mvc\\views\\home\\approvedtask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3652D8B2-D757-4DAE-BCA6-5DF3F617C5F4}|CP1.Api\\CP1.Api.csproj|c:\\users\\acaguilar\\desktop\\proyectos\\cp1\\cp1\\cp1.api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3652D8B2-D757-4DAE-BCA6-5DF3F617C5F4}|CP1.Api\\CP1.Api.csproj|solutionrelative:cp1.api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|c:\\users\\xpc\\desktop\\fidelitas\\progra v\\caso practico 1\\cp1\\cp1.mvc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|solutionrelative:cp1.mvc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|c:\\users\\acaguilar\\desktop\\proyectos\\cp1\\cp1\\cp1.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|solutionrelative:cp1.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{587793E9-1883-4C83-A0BB-F402250079E2}|CP1.MinimalApi\\CP1.MinimalApi.csproj|c:\\users\\acaguilar\\desktop\\proyectos\\cp1\\cp1\\cp1.minimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{587793E9-1883-4C83-A0BB-F402250079E2}|CP1.MinimalApi\\CP1.MinimalApi.csproj|solutionrelative:cp1.minimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|c:\\users\\xpc\\desktop\\fidelitas\\progra v\\caso practico 1\\cp1\\cp1.mvc\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|solutionrelative:cp1.mvc\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreateTask.cshtml",
-              "DocumentMoniker": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Mvc\\Views\\Home\\CreateTask.cshtml",
-              "RelativeDocumentMoniker": "CP1.Mvc\\Views\\Home\\CreateTask.cshtml",
-              "ToolTip": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Mvc\\Views\\Home\\CreateTask.cshtml",
-              "RelativeToolTip": "CP1.Mvc\\Views\\Home\\CreateTask.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
+              "Title": "DeleteTask.cshtml",
+              "DocumentMoniker": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Mvc\\Views\\Home\\DeleteTask.cshtml",
+              "RelativeDocumentMoniker": "CP1.Mvc\\Views\\Home\\DeleteTask.cshtml",
+              "ToolTip": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Mvc\\Views\\Home\\DeleteTask.cshtml",
+              "RelativeToolTip": "CP1.Mvc\\Views\\Home\\DeleteTask.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-20T18:47:40.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EditTask.cshtml",
-              "DocumentMoniker": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Mvc\\Views\\Home\\EditTask.cshtml",
-              "RelativeDocumentMoniker": "CP1.Mvc\\Views\\Home\\EditTask.cshtml",
-              "ToolTip": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Mvc\\Views\\Home\\EditTask.cshtml",
-              "RelativeToolTip": "CP1.Mvc\\Views\\Home\\EditTask.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-20T18:47:13.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Mvc\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "CP1.Mvc\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Mvc\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "CP1.Mvc\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABsAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-20T18:44:49.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TaskController.cs",
-              "DocumentMoniker": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Api\\Controllers\\TaskController.cs",
-              "RelativeDocumentMoniker": "CP1.Api\\Controllers\\TaskController.cs",
-              "ToolTip": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Api\\Controllers\\TaskController.cs",
-              "RelativeToolTip": "CP1.Api\\Controllers\\TaskController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCEAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T18:32:59.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Mvc\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "CP1.Mvc\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Mvc\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "CP1.Mvc\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAzwD0AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T18:19:26.928Z",
+              "WhenOpened": "2025-10-23T02:45:30.522Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "RestProvider.cs",
-              "DocumentMoniker": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Architecture\\Providers\\RestProvider.cs",
-              "RelativeDocumentMoniker": "CP1.Architecture\\Providers\\RestProvider.cs",
-              "ToolTip": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.Architecture\\Providers\\RestProvider.cs",
-              "RelativeToolTip": "CP1.Architecture\\Providers\\RestProvider.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAYwHAAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T18:19:26.932Z",
+              "Title": "ApprovedTask.cshtml",
+              "DocumentMoniker": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Mvc\\Views\\Home\\ApprovedTask.cshtml",
+              "RelativeDocumentMoniker": "CP1.Mvc\\Views\\Home\\ApprovedTask.cshtml",
+              "ToolTip": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Mvc\\Views\\Home\\ApprovedTask.cshtml",
+              "RelativeToolTip": "CP1.Mvc\\Views\\Home\\ApprovedTask.cshtml",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T02:45:14.465Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.MinimalApi\\Program.cs",
-              "RelativeDocumentMoniker": "CP1.MinimalApi\\Program.cs",
-              "ToolTip": "C:\\Users\\acaguilar\\Desktop\\Proyectos\\CP1\\CP1\\CP1.MinimalApi\\Program.cs",
-              "RelativeToolTip": "CP1.MinimalApi\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAC4AAAADAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Mvc\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "CP1.Mvc\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Mvc\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "CP1.Mvc\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwDUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T17:55:20.128Z",
+              "WhenOpened": "2025-10-23T02:43:20.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Mvc\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "CP1.Mvc\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Mvc\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "CP1.Mvc\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAowBsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T02:40:49.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AssignRole.cshtml",
+              "DocumentMoniker": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Mvc\\Views\\Home\\AssignRole.cshtml",
+              "RelativeDocumentMoniker": "CP1.Mvc\\Views\\Home\\AssignRole.cshtml",
+              "ToolTip": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Mvc\\Views\\Home\\AssignRole.cshtml",
+              "RelativeToolTip": "CP1.Mvc\\Views\\Home\\AssignRole.cshtml",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAwHMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T02:35:03.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Sidebar.cshtml",
+              "DocumentMoniker": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Mvc\\Views\\Shared\\_Sidebar.cshtml",
+              "RelativeDocumentMoniker": "CP1.Mvc\\Views\\Shared\\_Sidebar.cshtml",
+              "ToolTip": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Mvc\\Views\\Shared\\_Sidebar.cshtml",
+              "RelativeToolTip": "CP1.Mvc\\Views\\Shared\\_Sidebar.cshtml",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAAwNQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T02:32:33.276Z",
               "EditorCaption": ""
             }
           ]

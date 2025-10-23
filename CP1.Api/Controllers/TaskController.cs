@@ -8,23 +8,34 @@ namespace CP1.Api.Controllers;
 [Route("api/tasks")]
 public class TasksController : ControllerBase
 {
+    private static readonly HashSet<string> AllowedStatuses =
+        new(StringComparer.OrdinalIgnoreCase) { "Pending", "InProgress", "Completed" };
+
     private readonly ITaskService _taskService;
     public TasksController(ITaskService taskService) => _taskService = taskService;
 
     [HttpPost]
     public async Task<ActionResult<TaskDTO>> Create([FromBody] TaskDTO dto)
     {
-        if (dto is null) return BadRequest("Body is required.");
-        if (string.IsNullOrWhiteSpace(dto.Name)) return BadRequest("Name is required.");
+        if (dto is null) return BadRequest("Campo requerido");
+        if (string.IsNullOrWhiteSpace(dto.Name)) return BadRequest("Nombre requerido");
+        if (dto.DueDate == default) return BadRequest("Fecha es requerida");
+        if (string.IsNullOrWhiteSpace(dto.Status)) dto.Status = "Pending";
+        if (!AllowedStatuses.Contains(dto.Status)) return BadRequest("Estado invalido");
 
         var created = await _taskService.CreateAsync(dto);
-
-        return CreatedAtRoute("GetTaskById", new { id = created.TaskId }, created);
+        return CreatedAtRoute("GetTaskById", new { id = created.Id }, created);
     }
 
     [HttpPut("{id:int}")]
     public async Task<IActionResult> Update(int id, [FromBody] TaskDTO dto)
     {
+        if (dto is null) return BadRequest("Campo requerido");
+        if (string.IsNullOrWhiteSpace(dto.Name)) return BadRequest("Nombre requerido");
+        if (dto.DueDate == default) return BadRequest("Fecha es requerida");
+        if (string.IsNullOrWhiteSpace(dto.Status)) dto.Status = "Pending";
+        if (!AllowedStatuses.Contains(dto.Status)) return BadRequest("Estado invalido.");
+
         var ok = await _taskService.UpdateAsync(id, dto);
         return ok ? NoContent() : NotFound();
     }
@@ -36,7 +47,6 @@ public class TasksController : ControllerBase
         return ok ? NoContent() : NotFound();
     }
 
-    // GET /api/tasks/{id}
     [HttpGet("{id:int}", Name = "GetTaskById")]
     public async Task<ActionResult<TaskDTO>> GetById(int id)
     {
