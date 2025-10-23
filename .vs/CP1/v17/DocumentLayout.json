@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|c:\\users\\xpc\\desktop\\fidelitas\\progra v\\caso practico 1\\cp1\\cp1.mvc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BB9B669-E19D-4B6D-900C-AFA418D5E7D6}|CP1.Mvc\\CP1.Mvc.csproj|solutionrelative:cp1.mvc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3652D8B2-D757-4DAE-BCA6-5DF3F617C5F4}|CP1.Api\\CP1.Api.csproj|c:\\users\\xpc\\desktop\\fidelitas\\progra v\\caso practico 1\\cp1\\cp1.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3652D8B2-D757-4DAE-BCA6-5DF3F617C5F4}|CP1.Api\\CP1.Api.csproj|solutionrelative:cp1.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{587793E9-1883-4C83-A0BB-F402250079E2}|CP1.MinimalApi\\CP1.MinimalApi.csproj|c:\\users\\xpc\\desktop\\fidelitas\\progra v\\caso practico 1\\cp1\\cp1.minimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{587793E9-1883-4C83-A0BB-F402250079E2}|CP1.MinimalApi\\CP1.MinimalApi.csproj|solutionrelative:cp1.minimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Mvc\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "CP1.Mvc\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Mvc\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "CP1.Mvc\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T03:05:03.494Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
@@ -44,6 +35,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Api\\Program.cs",
+              "RelativeDocumentMoniker": "CP1.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.Api\\Program.cs",
+              "RelativeToolTip": "CP1.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T03:29:53.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.MinimalApi\\Program.cs",
+              "RelativeDocumentMoniker": "CP1.MinimalApi\\Program.cs",
+              "ToolTip": "C:\\Users\\XPC\\Desktop\\Fidelitas\\Progra V\\Caso Practico 1\\CP1\\CP1.MinimalApi\\Program.cs",
+              "RelativeToolTip": "CP1.MinimalApi\\Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAABsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T03:29:27.685Z",
+              "EditorCaption": ""
             }
           ]
         },

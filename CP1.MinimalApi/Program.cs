@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "CP1 Minimal API", Version = "v1" });
 });
 
-// DI
+
 builder.Services.AddScoped<ITaskRepository, TaskRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ITaskService, TaskService>();
@@ -25,7 +25,7 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddCors(corsOptions => corsOptions.AddPolicy("CP1Client", policy => policy
     .AllowAnyHeader()
     .AllowAnyMethod()
-    .WithOrigins("https://localhost:7246"))); // MVC
+    .WithOrigins("https://localhost:7246"))); 
 
 var app = builder.Build();
 
@@ -33,7 +33,6 @@ if (app.Environment.IsDevelopment()) { app.UseSwagger(); app.UseSwaggerUI(); }
 
 app.UseCors("CP1Client");
 
-// ========== TASKS (READ) ==========
 var tasks = app.MapGroup("/api/tasks").WithTags("Tasks");
 
 // GET /api/tasks?q=
@@ -47,7 +46,6 @@ tasks.MapGet("/{id:int}", async (ITaskService taskService, int id) =>
     return dto is null ? Results.NotFound() : Results.Ok(dto);
 });
 
-// ========== AUTH ==========
 var auth = app.MapGroup("/api/auth").WithTags("Auth");
 
 // POST /api/auth/login
@@ -60,7 +58,6 @@ auth.MapPost("/login", async (IAuthService authService, UserLoginDTO req) =>
     return user is null ? Results.Unauthorized() : Results.Ok(user);
 });
 
-// ========== ADMIN READ ==========
 var admin = app.MapGroup("/api/admin").WithTags("Admin");
 
 // GET /api/admin/users-with-role
