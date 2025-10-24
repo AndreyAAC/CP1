@@ -11,10 +11,12 @@ namespace CP1.Mvc.Controllers;
 El prompt utilizado es:
 
 Tengo una vista Login la cual pide un correo y contraseña, esta se valida por medio de un minimalAPI
-Al darle Acceder esta me redirige a Index.cshtml. Ocupo que si el usuario tiene id "2" (Specialist) 
-solo deje crear task que tengo con un campo "Approved" null. Como puedo hacer para mantener la sesion
-Buscando tengo una idea que puede ser SetInt32 y GetInt32, como podria pasarlo.
+Al darle Acceder esta me redirige a Index.cshtml. Ocupo que si el usuario tiene id "1" (Admin) 
+permita ver las paginas aprbar task o asignar role. Si no es admin que no lo permita ver esas vistas 
+Como puedo hacer para mantener la sesion. Investigando tengo una idea que puede ser utlizando SetInt32 
+y GetInt32, como podria pasarlo.
 */
+
 public class AuthController : Controller
 {
     private readonly IRestProvider _rest;

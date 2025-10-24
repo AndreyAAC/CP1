@@ -28,7 +28,6 @@ namespace CP1.Mvc.Controllers
         private bool IsAdmin => CurrentRoleId == 1;
         private bool IsSpecialist => CurrentRoleId == 2;
 
-
         public async Task<IActionResult> Index()
         {
             if (HttpContext.Session.GetInt32("UserId") is null)
